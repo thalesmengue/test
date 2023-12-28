@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-
+import SocialList from "@/components/SocialList";
 import PageLayout from "@/layouts/Base";
 import aboutImg from "@/assets/about-astro.png";
 
@@ -14,35 +14,15 @@ const meta = {
 	<div class="space-y-6">
 		<h1 class="title">About</h1>
 		<p>
-			Hi, I’m a starter Astro. I’m particularly great for getting you started with your own blogging
-			website.
+			Hi, my name is Thales Machado. I’m particularly interested in development stuff, such as VueJS, ReactJS, NodeJS, TypeScript, Laravel, maybe because this is my actual stack.
 		</p>
-		<div class="flex justify-center">
-			<Image
-				src={aboutImg}
-				alt="A cartoon cactus looking at the 'Astro.build' logo"
-				loading="eager"
-				fetchpriority="high"
-			/>
-		</div>
-		<p>Here are my some of my awesome built in features:</p>
-		<ul class="list-inside list-disc">
-			<li>I'm ultra fast as I'm a static site</li>
-			<li>I'm fully responsive</li>
-			<li>I come with a light and dark mode</li>
-			<li>I'm easy to customise and add additional content</li>
-			<li>I have Tailwind CSS styling</li>
-			<li>Shiki code syntax highlighting</li>
-			<li>Satori for auto generating OG images for blog posts</li>
-		</ul>
-		<p>
-			Clone or fork my <a
-				class="cactus-link inline-block"
-				href="https://github.com/chrismwilliams/astro-cactus"
-				target="_blank"
-				rel="noopener noreferrer"
-				aria-label="github repository">repo</a
-			> if you like me!
-		</p>
+		<h2 class="title">
+			How did I get here?
+		</h3>
+		<p> The year is 2020, I was in law school, sixty semester, thinking about what I want to be was always a problem, we have so much options that is easy to get lost in our own thoughts about this topic.</p>
+		<p> So, I met a friend (well, now he is a friend), that was streaming on the category "Software & Game Development", he was doing a little class about PHP, so I thought with myself, why not!? right?</p>
+		<p> I started to watch his streams, and there was my first experience with coding, after this I started to search content by myself, reading documentation and articles about the topics I wanted to know more, at this point I started to feel more confident to search for a opportunity in the field.</p>
+		<p> At the moment I work as a Software Enginner, but I'm opening to new opportunities, feel free to chat with me about anything, you can find me on</p>
+		<SocialList />
 	</div>
 </PageLayout>
